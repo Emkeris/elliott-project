@@ -1,0 +1,16 @@
+<div class="container" id="companyNews">
+  <h2>COMPANY NEWS</h2>
+  <br>
+  <div class="row">
+    <div class="col-lg-4 my-3" *ngFor="let card of cards" id="singleCard">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src=" {{ card.imagePath }} " class="card-img-top img-fluid" alt=" {{ card.title }} " style="height: 286px;" >
+            <div class="card-body">
+              <h5 class="card-title"> {{ card.title }} </h5>
+              <p class="card-text"> {{ card.info }} </p>
+              <a href="#" class="btn btn-primary">FIND OUT MORE</a>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

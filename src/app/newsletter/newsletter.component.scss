@@ -1,0 +1,38 @@
+//base
+
+.container {
+
+  .row {
+
+    #newsLeft {
+
+
+      #toggleBox {
+        border: solid 1px #000;
+        padding: 30px 20px;
+      }
+    }
+  }
+}
+
+// .imageNewsLetter{
+
+// }
+
+
+// input {
+
+// }
+
+@media only screen and (max-width: 991px) {
+  .container {
+
+    .row {
+
+      #newsRight {
+        display: none;
+      }
+    }
+  }
+
+}

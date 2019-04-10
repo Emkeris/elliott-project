@@ -1,0 +1,46 @@
+<div class="container" id="newsLetter">
+  <div class="row">
+    <!-- left -->
+    <div class="col-md-8" id="newsLeft">
+      <h2>NEWSLETTER SIGNUP</h2>
+      <br>
+      <p>
+          Single shot, cultivar, ut kopi-luwak cup spoon black steamed half and half whipped kopi-luwak. French press bar siphon seasonal aged saucer cultivar redeye. Steamed single origin galão aroma percolator seasonal caffeine extra shop. Kopi-luwak java caffeine aftertaste sit kopi-luwak sugar caffeine as that. Single origin lungo wings, cup robusta aftertaste decaffeinated grinder.
+      </p>
+      <p>
+          Black and so, foam id, breve kopi-luwak wings caramelization iced. Foam blue mountain, ut in mug robust redeye medium acerbic. Carajillo, kopi-luwak in mocha a aged robusta. Siphon, dark french press espresso cultivar cinnamon dripper cinnamon sweet. Half and half a as siphon et cup wings robusta mocha steamed
+      </p>
+      <p>
+          Sweet saucer carajillo cappuccino, robusta, at, breve coffee fair trade milk crema. Affogato cup wings saucer and latte viennese. Saucer, qui, irish, blue mountain, steamed carajillo plunger pot steamed wings seasonal
+      </p>
+      <br>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label class="sr-only form-control">Email</label>
+          <input type="text" class="form-control" placeholder="Your Name" (input)="toggleText($event)">
+        </div>
+          <button type="button" class="btn btn-primary mb-2 ml-2" (click)="toggleButton()" [disabled]="yourName.length < 3">Submit</button>
+        </form>
+
+      <div class="container" id="toggleBox" *ngIf="toggle">
+        <h2>Welcome {{ yourName }} </h2>
+        <h4>Please enter your details</h4>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Your Email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control"  placeholder="Enter your Telephone Number">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+    </div>
+    <!-- Right -->
+    <div class="col-md imageNewsLetter" id="newsRight">
+      <img src="https://www.pngarts.com/files/1/Coffee-PNG-Image.png" alt="Image" class="img-fluid">
+    </div>
+  </div>
+</div>
